@@ -109,7 +109,7 @@ export default function SingleItem(props){
                 </div>
                 <Button 
                     variant="contained" 
-                    onClick={props.location.postComment(id, commentData)}
+                    onClick={props.location.postComment ? props.location.postComment(id, commentData): null}
                 >Post Comment
                 </Button>
             </div>
