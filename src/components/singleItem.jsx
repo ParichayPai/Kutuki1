@@ -83,7 +83,7 @@ export default function SingleItem(props){
             <hr />
             <div className={style.body}>
                 <div className={style.image}> 
-                    {pic}
+                    <img src={logo} alt="IMAGES" className={style.image}/>
                 </div>
                 <div className={style.description}> 
                     {description}
