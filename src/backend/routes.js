@@ -12,7 +12,7 @@ module.exports = (app) => {
             title: req.body["title"],
             description: req.body["description"],
             keywords: req.body["keywords"],
-            pic: req.body["pic"],
+            //pic: req.body["pic"],
             comments: req.body["comments"],
         });
         IncomingPost.save().then(data => {
@@ -28,18 +28,18 @@ module.exports = (app) => {
 
     app.put("/api/v1/assets/:id", (req, res) => {
         let id = req.params.id;
-        Post.findOne({_id : id})
-            .then(post => Post.updateOne({new: true}, { _id: post._id }, {
-                title: req.body["title"],
-                description: req.body["description"],
-                keywords: req.body["keywords"],
-                pic: req.body["pic"],
-                comments: req.body["comments"],
-            }))
-            .then(console.log("post Edited"))
+
+        Post.findOneAndUpdate({_id: id}, {
+            title: req.body["title"],
+            description: req.body["description"],
+            keywords: req.body["keywords"],
+            // pic: req.body["pic"],
+            comments: req.body["comments"],
+        },{new: true})
+        .then(console.log("Post Edited"))
             .catch(err => {
                 throw err;
-            });    
+            });   
     });
 
     app.put("/api/v1/assets/comments/:id", (req, res) => {
