@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+.App {
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: linear-gradient(to bottom, #e0f9e2, #b4dec8, #87c3b3, #56a9a2, #048e94);  
+}
+
+#header{
+  display: flex;
+  height: 50px;
+}
+
+#profilePic{
+  margin-left: auto;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+/* .title{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: auto;
+  /* margin-top: 20px;
+  font-size: 25px; 
+} */
+
+.dp{
+  height: 20px;
+  width: 20px;
+}
+
+.appBody{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* .addButtonDiv{
+  display: flex;
+  height: 50px;
+} */
+.center{
+  font-size: large;
+}
+
+.image{
+  height: 100px;
+  width: 100px;
+}
+
+.imgContainer{
+  height: 70%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+.cardBody{
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardName{
+  display: flex;
+  padding-left:20px ;
+  align-items: center;
+  width: 500px;
+}
+
+.dialogHeader{
+  display: flex;  
+  flex-direction: row;
+}
+
+.dialogText{
+  width:70%;
+  display: flex;
+  flex-direction: column;
+}
+.dialogText > * > *{
+  margin-top: 50px;
+}
+
+.dialogImg{
+  /* width:40%; */
+  margin-left: 20px;
+  border: 2px dotted black;
+  display: flex;
+}
+
+.dialogImg > input{
+  margin: auto;
+  margin-left: 10px;
+  /* width: 100px; */
+  /* margin-top: auto;
+  margin-bottom: auto; */
+}
+
+.inputBox{
+  border: solid 2px black
+}
+
+.dialogBody{
+  display: flex;
+  flex-direction: row;
+}
